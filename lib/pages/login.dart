@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
               Image.asset("assets/images/hey.png",
                 fit: BoxFit.cover,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 28.0,
               ),
               Text(
@@ -64,7 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: Column(
                   children: [
                     TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         hintText: "Enter username",
                         labelText: "Username",
                       ),
@@ -81,7 +81,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     TextFormField(
                       obscureText: true,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         hintText: "Enter password",
                         labelText: "password",
                       ),
