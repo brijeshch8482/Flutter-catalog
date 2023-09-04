@@ -16,10 +16,12 @@ class MyApp extends StatelessWidget {
 
       themeMode: ThemeMode.light,
       theme: MyTheme.lightTheme(context),
+
       debugShowCheckedModeBanner: false,
+
       initialRoute: MyRoutes.homeRoutes,
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => const LoginPage(),
         MyRoutes.loginRoutes: (context) => LoginPage(),
         MyRoutes.homeRoutes: (context) => HomePage(),
       },

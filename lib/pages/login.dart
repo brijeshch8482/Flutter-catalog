@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
       setState(() {
         changeButton = true;
       });
-      await Future.delayed(Duration(seconds: 1));
+      await Future.delayed(const Duration(seconds: 1));
       await Navigator.pushNamed(context, MyRoutes.homeRoutes);
       setState(() {
         changeButton = false;
@@ -51,12 +51,12 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Text(
                 "Welcome $name",
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Padding(
@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                         return null;
                       },
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30.0,
                     ),
                     Material(
@@ -109,8 +109,8 @@ class _LoginPageState extends State<LoginPage> {
                           height: 50,
                           alignment: Alignment.center,
 
-                          child: changeButton ? Icon(Icons.done, color: Colors.white,)
-                              :Text("Login",
+                          child: changeButton ? const Icon(Icons.done, color: Colors.white,)
+                              :const Text("Login",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
